@@ -23,6 +23,7 @@ app = Flask(__name__)
 # db.init_app(app)  # Link the database and the app. This is the reason you need to import db from models
 # data_manager = DataManager() # Create an instance object of your DataManager class
 
+
 # Route for the request (POST). GET to just first display the index.html page
 @app.route('/', methods=['GET', 'POST'])
 def index():
