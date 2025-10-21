@@ -1,5 +1,5 @@
 # AI-AMTMan
-AI Aircraft Maintenance Task Manager (AI-AMTMan). Aircraft Maintenance is a documentation intensive and time consuming task that requires lots of engineer time. AI-AMTMan automates this problem through AI.
+AI Aircraft Maintenance Task Manager (AI-AMTMan). Aircraft Maintenance is a documentation intensive and time consuming task that requires lots of engineer time. AI-AMTMan automates this problem through LLM's, SQLAlchemy and a bit of HTML.
 
 ## General Project Description
 
