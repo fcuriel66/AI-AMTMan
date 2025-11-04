@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Inspector’s Eye — Digital Logbook</title>
+  <style>
+    body {
+      font-family: 'Courier New', monospace;
+      background-color: #0a0a0f;
+      color: #e0e0e0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      border-bottom: 1px solid #222;
+      width: 100%;
+      background: rgba(255,255,255,0.02);
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      color: #69f0ae;
+      letter-spacing: 0.1em;
+    }
+
+    .log-entry {
+      width: 90%;
+      max-width: 800px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid #1e1e1e;
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      box-shadow: 0 0 10px rgba(0,255,180,0.1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .log-entry::before {
+      content: "AI LINE WATCHER // INSPECTION DATA";
+      position: absolute;
+      top: 0.5rem;
+      right: 1rem;
+      font-size: 0.7rem;
+      color: #888;
+    }
+
+    .timestamp {
+      color: #999;
+      font-size: 0.8rem;
+    }
+
+    .section-title {
+      color: #69f0ae;
+      margin-top: 1rem;
+      font-size: 1rem;
+      border-bottom: 1px dashed #333;
+      padding-bottom: 0.2rem;
+    }
+
+    .reading {
+      font-family: 'Courier New', monospace;
+      background: rgba(0,255,200,0.05);
+      padding: 0.3rem 0.5rem;
+      margin: 0.3rem 0;
+      border-radius: 4px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #555;
+      font-size: 0.8rem;
+    }
+
+    .blink {
+      animation: blink 1.5s infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 0.2; }
+      50% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>THE INSPECTOR’S EYE — DIGITAL LOGBOOK</h1>
+    <p class="timestamp">HANGAR BAY 12 | 03:17 UTC</p>
+  </header>
+
+  <div class="log-entry">
+    <div class="section-title">Inspection Record</div>
+    <p><strong>Inspector:</strong> Curiel, F.</p>
+    <p><strong>Drone Unit:</strong> LW-03 / v2.7 Neural Scan Array</p>
+    <p><strong>Objective:</strong> Lightning Strike Surface Analysis</p>
+
+    <div class="section-title">AI Observations</div>
+    <div class="reading">[SCAN] Dent anomaly detected — 1.3 mm deviation</div>
+    <div class="reading">[SCAN] Surface continuity 98.7%</div>
+    <div class="reading">[MODEL] Confidence threshold: 0.94</div>
+
+    <div class="section-title">Human Verification</div>
+    <p>Manual inspection under UV and tactile verification confirmed minor surface ripple near static wick. Structural integrity within tolerance.</p>
+
+    <div class="section-title">Inspector's Note</div>
+    <p><em>Inspection verified manually. AI assessment: advisory only. Judgment retained under human authority.</em></p>
+
+    <div class="section-title">AI Response</div>
+    <div class="reading">Observation: Inspector override validated.</div>
+    <div class="reading">Inference: Confidence exceeded empirical threshold.</div>
+    <div class="reading">Query: Requesting post-event learning input.</div>
+
+    <div class="section-title">End Transmission</div>
+    <p class="blink">•• Signal acknowledgment: one long, one short</p>
+  </div>
+
+  <footer>
+    © 2025 Digital Hangar Log — Prototype Visualization | Generated for Fernando Curiel
+  </footer>
+</body>
+</html>
